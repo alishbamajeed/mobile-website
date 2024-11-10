@@ -1,0 +1,148 @@
+/* Container styling */
+#featuredcars {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+/* Heading styling */
+.heading {
+  font-size: 3em;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #ff4d4d;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Grid layout styling */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+  justify-items: center;
+}
+
+/* Card styling */
+.card {
+  border: 1px solid #333;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 12px rgba(255, 77, 77, 0.2);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 18px rgba(255, 77, 77, 0.3);
+  background-color: #262626;
+  transform: translateY(-10px);
+}
+
+/* Image styling */
+.image-container {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.2);
+}
+
+/* Details styling */
+.details {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Name and Price Styling */
+.details h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.details p.price {
+  font-size: 1.2em;
+  color: #ff4d4d;
+  font-weight: 600;
+}
+
+/* Description text */
+.description {
+  font-size: 1em;
+  color: #cccccc;
+  line-height: 1.7;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Button styling */
+.card .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #ff4d4d;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #ff1a1a;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5em;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .grid {
+    gap: 15px;
+  }
+
+  .card .btn {
+    padding: 10px 25px;
+    width: 100%; /* Full-width button for mobile */
+  }
+}

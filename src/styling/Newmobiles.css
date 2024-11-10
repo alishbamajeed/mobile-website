@@ -1,0 +1,128 @@
+
+#newmobiles {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+.honey {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.honey p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.honey h2 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.underline {
+  width: 100px;
+  height: 3px;
+  background-color: #0920383f;
+  margin: 0 auto;
+}
+
+.sliderContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mobileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.mobileImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mobileImage img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.mobileDetails {
+  flex: 1;
+  padding: 20px;
+}
+
+.mobileDetails h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.mobileDetails p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.detailsButton {
+  background-color: #0b2f555e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.detailsButton:hover {
+  background-color: #0c4d27ef;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #08381a;
+}
+
+@media (max-width: 768px) {
+  .mobileContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobileImage, .mobileDetails {
+    flex: none;
+    width: 100%;
+  }
+
+  .honey h2 {
+    font-size: 28px;
+  }
+
+  .honey p {
+    font-size: 16px;
+  }
+}

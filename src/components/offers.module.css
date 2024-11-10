@@ -1,0 +1,70 @@
+.offersSection {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .offersTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .offerCategory {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .categoryTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #cccccc;
+    text-align: center;
+  }
+  
+  .offerCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .offerCard {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .cardTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cardDescription {
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 15px;
+  }
+  
+  .shopButton {
+    background-color: #ff4500;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .shopButton:hover {
+    background-color: #ff6347;
+  }

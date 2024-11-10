@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Services Section */
+#services {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  text-align: center; 
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.serviceCard {
+  background-color: #2d2d2d;
+  border: 1px solid #3d3d3d;
+  border-radius: 8px;
+  padding: 30px;
+  width: 280px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+  background-color: #ff6b6b;
+  color: #1a1a1a;
+  box-shadow: 0px 6px 15px rgba(255, 107, 107, 0.4);
+}
+
+.serviceIcon {
+  font-size: 40px;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.serviceCard:hover .serviceIcon {
+  color: #1a1a1a;
+}
+
+.serviceCard h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.serviceCard:hover h3 {
+  color: #1a1a1a;
+}
+
+.serviceCard p {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.serviceCard:hover p {
+  color: #1a1a1a;
+}
+
+.underline {
+  width: 30px;
+  height: 3px;
+  background-color: #ff6b6b;
+  margin: 0 auto;
+}
+
+.serviceCard:hover .underline {
+  background-color: #1a1a1a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .serviceCard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .serviceIcon {
+    font-size: 35px;
+  }
+
+  .serviceCard h3 {
+    font-size: 18px;
+  }
+
+  .serviceCard p {
+    font-size: 13px;
+  }
+
+  .serviceCard {
+    padding: 20px;
+  }
+}

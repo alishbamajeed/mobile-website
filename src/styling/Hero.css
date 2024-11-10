@@ -1,0 +1,89 @@
+/* Hero Section */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding-top: 40px;
+  margin-top: 60px;
+ 
+  color: #fff;
+  background-size: medium;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroText {
+  text-align: center;
+  color: #1f1f20ee;
+  max-width: 80%;
+}
+
+.heroText h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.heroText p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.contactBtn {
+  background-color: #a9a8af;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.contactBtn:hover {
+  background-color: #2379a1de;
+}
+
+/* Arrows for Manual Scrolling */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #a310109f;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #hero {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .heroText h2 {
+    font-size: 18px;
+  }
+
+  .heroText p {
+    font-size: 12px;
+  }
+
+  .contactBtn {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
